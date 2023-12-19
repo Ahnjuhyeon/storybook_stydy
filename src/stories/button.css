@@ -1,0 +1,55 @@
+/* styled-components로 component화한 button의 css 속성들만을 모아놓은 css 파일 */
+/* react 전에 배웠던 html, css, javascript 쓰듯이 사용하는 부분 */
+
+/* 맨 밑에 button 부분 */
+.storybook-button {
+  /* button reset CSS */
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  /* button css 중 공통되는 부분 (교집합) */
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+/* variantCSS */
+.primary {
+  background-color: #75aff2;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: #97c7ff;
+  }
+}
+.secondary {
+  background-color: #c0c0c0;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: #eaeaea;
+  }
+}
+
+/* sizeCSS */
+.smallCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.largeCircle {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+}
+
+/* fontCSS */
+.regular {
+  font-size: 16px;
+  font-weight: regular;
+}
+.bold {
+  font-size: 26px;
+  font-weight: bold;
+}

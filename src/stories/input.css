@@ -1,0 +1,46 @@
+/* styled-components로 component화한 button의 css 속성들만을 모아놓은 css 파일 */
+/* react 전에 배웠던 html, css, javascript 쓰듯이 사용하는 부분 */
+
+/* 맨 밑에 input 부분 */
+.storybook-input {
+  /* input reset CSS */
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  /* input css 중 공통되는 부분 (교집합) */
+  padding: 0 10px;
+  margin-left: 10px;
+  color: #444;
+  background-color: #fff;
+}
+
+/* variantCSS */
+.default {
+  border: 2px solid #75aff2;
+}
+.second {
+  border: 2px solid #c0c0c0;
+}
+
+/* sizeCSS */
+.small {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+}
+.large {
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+/* fontCSS */
+.regular {
+  font-size: 16px;
+  font-weight: regular;
+}
+.bold {
+  font-size: 26px;
+  font-weight: bold;
+}
